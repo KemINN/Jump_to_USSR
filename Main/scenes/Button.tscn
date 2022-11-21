@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Button_GO.gd" type="Script" id=1]
+[ext_resource path="res://aseprite/button.png" type="Texture" id=2]
+
+[node name="Button" type="Button"]
+margin_left = 790.0
+margin_top = 425.0
+margin_right = 1075.0
+margin_bottom = 590.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 4
+icon = ExtResource( 2 )
+script = ExtResource( 1 )

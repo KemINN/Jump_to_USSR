@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stalin1.png-dbf6fcad6c19ac00202bde0979203cb0.stex"
+path="res://.import/button.png-3dd9e2515caf6793e9224440fd0070df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Stalin1.png"
-dest_files=[ "res://.import/Stalin1.png-dbf6fcad6c19ac00202bde0979203cb0.stex" ]
+source_file="res://aseprite/button.png"
+dest_files=[ "res://.import/button.png-3dd9e2515caf6793e9224440fd0070df.stex" ]
 
 [params]
 
