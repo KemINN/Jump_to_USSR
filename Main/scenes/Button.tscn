@@ -12,3 +12,4 @@ rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 4
 icon = ExtResource( 2 )
 script = ExtResource( 1 )
+scene_to_open = "res://scenes/Main.tscn"

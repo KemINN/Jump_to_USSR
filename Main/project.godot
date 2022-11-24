@@ -18,6 +18,10 @@ config/icon="res://icon.png"
 
 aseprite_executable_path="C:\\Users\\dudni\\Documents\\Project_Template\\Main\\addons\\AsepriteAnimationImporter"
 
+[autoload]
+
+SceneChanger="*res://scenes/SceneChanger.tscn"
+
 [display]
 
 window/size/width=1920
