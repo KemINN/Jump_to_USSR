@@ -34,7 +34,6 @@ icon = SubResource( 1 )
 [node name="Button2" type="Sprite" parent="buttons/Button"]
 visible = false
 position = Vector2( 71.8438, 63.7386 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 2 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

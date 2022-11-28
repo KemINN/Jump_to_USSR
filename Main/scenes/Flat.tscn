@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://aseprite/balc.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 334, 15 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 10, 47 )
+shape = SubResource( 1 )
+
+[node name="Balc" type="Sprite" parent="StaticBody2D"]
+position = Vector2( 9.99983, 47 )
+scale = Vector2( 13.35, 7.5 )
+texture = ExtResource( 1 )

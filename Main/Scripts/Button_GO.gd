@@ -1,3 +1,3 @@
-extends Button
-
-export(String) var scene_to_open
+#extends Button
+#
+#export(String) var scene_to_open

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stalin2.png-e60c21dd5ba82fb514be79799db37ca4.stex"
+path="res://.import/ПримерДома.png-bbaa8c6f82ca85de6df5720b9890e3a5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://aseprite/Stalin2.png"
-dest_files=[ "res://.import/Stalin2.png-e60c21dd5ba82fb514be79799db37ca4.stex" ]
+source_file="res://Textures/ПримерДома.png"
+dest_files=[ "res://.import/ПримерДома.png-bbaa8c6f82ca85de6df5720b9890e3a5.stex" ]
 
 [params]
 
