@@ -3,7 +3,7 @@ extends KinematicBody2D
 const SPEED = 150
 const FLOOR = Vector2(0, -1)
 const GRAVITY = 970
-const JUMP_POWER = 650
+const JUMP_POWER = 450
 
 var velocity = Vector2()
 var dead = false
@@ -14,10 +14,10 @@ func _physics_process(delta):
 		position.y = 0
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = SPEED
-		
+
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -SPEED
-		
+
 	else:
 		velocity.x = 0
 		$AnimatedSprite.play("default")
@@ -26,4 +26,8 @@ func _physics_process(delta):
 		$AnimatedSprite.play("Jump")
 	velocity.y += (GRAVITY * delta)
 	velocity = move_and_slide(velocity, FLOOR)
-	
+
+
+
+#func launch(vector):
+	#pass # Replace with function body.
