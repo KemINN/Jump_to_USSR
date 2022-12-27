@@ -60,7 +60,7 @@ position = Vector2( 508, 208 )
 scale = Vector2( 1.07999, 1 )
 
 [node name="Floor6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 665, 292 )
+position = Vector2( 666, 292 )
 scale = Vector2( 1.07999, 1 )
 
 [node name="Floor7" parent="." instance=ExtResource( 3 )]
@@ -103,7 +103,7 @@ position = Vector2( 586, 125 )
 position = Vector2( 189, -42 )
 
 [node name="Floor16" parent="." instance=ExtResource( 3 )]
-position = Vector2( 268, -42 )
+position = Vector2( 269, -42 )
 
 [node name="Floor17" parent="." instance=ExtResource( 3 )]
 position = Vector2( 506, -41 )
@@ -153,6 +153,6 @@ scale = Vector2( 2.6, 1 )
 position = Vector2( 743, -42 )
 
 [node name="Floor32" parent="." instance=ExtResource( 3 )]
-position = Vector2( 665, -45 )
+position = Vector2( 665, -42 )
 
 [connection signal="vector_created" from="VectorCreator" to="Player" method="launch"]
