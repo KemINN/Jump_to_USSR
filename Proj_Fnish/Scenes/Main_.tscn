@@ -1,12 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Textures/Home.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Floor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Sprites/BC_ground.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Main_.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/Timer_bar.gd" type="Script" id=6]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( 16, 162 )
+script = ExtResource( 5 )
 
 [node name="Floor2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 31, 208 )
@@ -75,3 +78,14 @@ texture = ExtResource( 4 )
 [node name="Floor8" parent="." instance=ExtResource( 3 )]
 position = Vector2( 746, 209 )
 scale = Vector2( 1.07999, 1 )
+
+[node name="Timer_Bar" type="Line2D" parent="."]
+position = Vector2( 19, -292 )
+points = PoolVector2Array( -9, 84, 107, 84 )
+default_color = Color( 0.929412, 0.0117647, 0.0117647, 1 )
+script = ExtResource( 6 )
+
+[node name="Timer" type="Timer" parent="Timer_Bar"]
+autostart = true
+
+[connection signal="timeout" from="Timer_Bar/Timer" to="Timer_Bar" method="_on_Timer_timeout"]

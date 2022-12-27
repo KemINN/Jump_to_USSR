@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/timer.gd" type="Script" id=1]
+[ext_resource path="res://Intro.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Sprites/Sprite-0001.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 39
+font_data = ExtResource( 2 )
+
+[node name="Stat_bar" type="Node2D"]
+position = Vector2( 149.959, 68.75 )
+script = ExtResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 127.959, 74.75 )
+scale = Vector2( 0.536364, 0.536364 )
+texture = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="Label" type="Label" parent="Timer"]
+margin_left = 172.959
+margin_top = 59.75
+margin_right = 200.959
+margin_bottom = 99.75
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "0"

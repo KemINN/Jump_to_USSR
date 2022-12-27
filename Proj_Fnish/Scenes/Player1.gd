@@ -8,6 +8,10 @@ const JUMP_POWER = 650
 var velocity = Vector2()
 var dead = false
 
+var coins = 0
+
+func add_coin():
+	coins += 1
 
 func _physics_process(delta):
 	if position.y > 800:

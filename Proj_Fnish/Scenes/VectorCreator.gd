@@ -39,7 +39,6 @@ func _reset() -> void:
 func _input(event) -> void:
 	
 	if not touch_down:
-		
 		return
 	if event.is_action_released("ui_touch"):
 		touch_down = false
@@ -50,7 +49,7 @@ func _input(event) -> void:
 		position_end = event.position
 		vector = -(position_end - position_start).clamped(maximum_lenght)
 		update()
-		
+
 
 func _on_input_event( viewport, evet, _shape_idx) -> void:
 	
