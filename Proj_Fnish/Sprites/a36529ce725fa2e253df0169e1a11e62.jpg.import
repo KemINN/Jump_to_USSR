@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stalin1.png-19e0d1c3e79b9d529d003cdcec04b6b8.stex"
+path="res://.import/a36529ce725fa2e253df0169e1a11e62.jpg-a4ffa7bba9dd4fdcf7ba3d851025a74e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Stalin1.png"
-dest_files=[ "res://.import/Stalin1.png-19e0d1c3e79b9d529d003cdcec04b6b8.stex" ]
+source_file="res://Sprites/a36529ce725fa2e253df0169e1a11e62.jpg"
+dest_files=[ "res://.import/a36529ce725fa2e253df0169e1a11e62.jpg-a4ffa7bba9dd4fdcf7ba3d851025a74e.stex" ]
 
 [params]
 

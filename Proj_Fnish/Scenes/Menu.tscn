@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Button_GO.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Menu.gd" type="Script" id=2]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="BackGround" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.623529, 0.109804, 0.109804, 1 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -401.5
+margin_top = -257.5
+margin_right = 401.5
+margin_bottom = 257.5
+
+[node name="Button" type="Button" parent="Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -136.0
+margin_top = -78.0
+margin_right = 136.0
+margin_bottom = 78.0
+icon = ExtResource( 1 )
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_Button_pressed"]
