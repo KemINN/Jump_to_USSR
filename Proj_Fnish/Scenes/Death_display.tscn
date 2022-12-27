@@ -1,20 +1,23 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Sprites/Restart.png" type="Texture" id=1]
 [ext_resource path="res://Death_display.gd" type="Script" id=2]
+[ext_resource path="res://Textures/backround_restart_menu.jpg" type="Texture" id=3]
 
 [node name="Death_display" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
-[node name="Panel" type="Panel" parent="."]
-margin_right = 1286.0
-margin_bottom = 726.0
+[node name="BackroundRestartMenu" type="Sprite" parent="."]
+position = Vector2( 638, 359 )
+scale = Vector2( 0.667057, 0.70433 )
+texture = ExtResource( 3 )
 
 [node name="Button" type="Button" parent="."]
-margin_left = 370.0
-margin_top = 258.0
-margin_right = 823.0
-margin_bottom = 414.0
+margin_left = 417.0
+margin_top = 307.0
+margin_right = 870.0
+margin_bottom = 463.0
 icon = ExtResource( 1 )
+flat = true
