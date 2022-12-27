@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Sprites/Stalin_1.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Stalin_3.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Sprites/Stalin_2.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Player1.gd" type="Script" id=5]
 [ext_resource path="res://Sprites/Stalin_Jump.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Timer.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8.5, 27 )
@@ -47,3 +48,6 @@ limit_top = -100
 limit_right = 4610
 limit_bottom = -100
 limit_smoothed = true
+
+[node name="Timer" parent="." instance=ExtResource( 7 )]
+position = Vector2( -8, -46 )
