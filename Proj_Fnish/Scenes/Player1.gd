@@ -31,3 +31,18 @@ func _physics_process(delta):
 	velocity.y += (GRAVITY * delta)
 	velocity = move_and_slide(velocity, FLOOR)
 
+func _on_Death_body_entered(body):
+	get_tree().change_scene("res://Scenes/Death_display.tscn")
+
+
+
+
+
+func _on_Win_body_entered(body):
+	get_tree().change_scene("res://Scenes/MenuWin.tscn")
+	
+func _on_Win2_body_entered(body):
+	get_tree().change_scene("res://Scenes/MenuWin.tscn")
+
+func _on_Win3_body_entered(body):
+	get_tree().change_scene("res://Scenes/MenuWin.tscn")
