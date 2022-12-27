@@ -39,8 +39,11 @@ frames = SubResource( 2 )
 animation = "Jump"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -2, 0 )
+scale = Vector2( 1, 0.960615 )
 current = true
 limit_left = 0
-limit_top = -10000007
-limit_right = 2300
-limit_bottom = 524
+limit_top = -100
+limit_right = 4610
+limit_bottom = -100
+limit_smoothed = true

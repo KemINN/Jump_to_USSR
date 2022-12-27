@@ -370,4 +370,5 @@ texture = ExtResource( 4 )
 visible = false
 position = Vector2( -31, -183 )
 
+[connection signal="ready" from="." to="Player" method="_on_Node2D_ready"]
 [connection signal="vector_created" from="VectorCreator" to="Player" method="launch"]

@@ -7,8 +7,8 @@ const JUMP_POWER = 450
 
 var velocity = Vector2()
 var dead = false
-
 var coins = 0
+
 
 func add_coin():
 	coins += 1
@@ -31,7 +31,3 @@ func _physics_process(delta):
 	velocity.y += (GRAVITY * delta)
 	velocity = move_and_slide(velocity, FLOOR)
 
-
-
-#func launch(vector):
-	#pass # Replace with function body.
